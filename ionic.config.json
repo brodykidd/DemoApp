@@ -1,0 +1,8 @@
+{
+  "name": "fieldSalesAppDemo",
+  "app_id": "62c1986a",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
