@@ -32291,6 +32291,7 @@ function Transition_tsickle_Closure_declarations() {
 /* unused harmony export __asyncGenerator */
 /* unused harmony export __asyncDelegator */
 /* unused harmony export __asyncValues */
+/* unused harmony export __makeTemplateObject */
 /*! *****************************************************************************
 Copyright (c) Microsoft Corporation. All rights reserved.
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use
@@ -32353,7 +32354,7 @@ function __metadata(metadataKey, metadataValue) {
 function __awaiter(thisArg, _arguments, P, generator) {
     return new (P || (P = Promise))(function (resolve, reject) {
         function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator.throw(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
         function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
@@ -32452,6 +32453,12 @@ function __asyncValues(o) {
     var m = o[Symbol.asyncIterator];
     return m ? m.call(o) : typeof __values === "function" ? __values(o) : o[Symbol.iterator]();
 }
+
+function __makeTemplateObject(cooked, raw) {
+    if (Object.defineProperty) { Object.defineProperty(cooked, "raw", { value: raw }); } else { cooked.raw = raw; }
+    return cooked;
+};
+
 
 /***/ }),
 /* 28 */
